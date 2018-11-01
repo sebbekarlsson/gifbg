@@ -1,0 +1,10 @@
+[Unit]
+Description=Gif Background Service
+
+[Service]
+User=ianertson
+Environment=DISPLAY=:0
+ExecStart=/bin/bash -c 'cd /home/ianertson/workspace/gifbg; /home/ianertson/workspace/gifbg/venv/bin/python __main__.py'
+
+[Install]
+WantedBy=multi-user.target
