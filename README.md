@@ -6,9 +6,21 @@
 # Dependencies
 > These are the dependencies:
 * feh
+* python-virtualenv
 
 # Install
 > To install this, follow these steps:
+
+## Create a virtualenv
+> Create a python virtualenv:
+
+    virtualenv -p /usr/bin/python2.7 ./venv
+
+## Source and install
+> Source the venv and install `gifbg`:
+
+    source ./venv/bin/activate
+    python setup.py develop
 
 ## Edit the service file
 > First, edit the `gifbg.service` file to match the path where you placed
